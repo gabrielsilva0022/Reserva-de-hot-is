@@ -1,0 +1,45 @@
+    <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Hotel - Quartos</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+
+<div class="container mt-4">
+    <h1 class="mb-4">Quartos Disponíveis</h1>
+
+    <div class="row">
+        {% for quarto in quartos %}
+        <div class="col-md-4">
+            <div class="card shadow mb-4">
+                <div class="card-body">
+                    <h4>Quarto {{ quarto[1] }}</h4>
+                    <p>Tipo: {{ quarto[2] }}</p>
+                    <p>Preço: R$ {{ quarto[3] }}</p>
+                    <p>Status: 
+                        {% if quarto[4] == 'livre' %}
+                            <span class="text-success">Livre</span>
+                        {% else %}
+                            <span class="text-danger">Ocupado</span>
+                        {% endif %}
+                    </p>
+
+                    {% if quarto[4] == 'livre' %}
+                    <a href="/reservar/{{ quarto[0] }}" class="btn btn-primary w-100">Reservar</a>
+                    {% else %}
+                    <button class="btn btn-secondary w-100" disabled>Indisponível</button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+</div>
+
+</body>
+</html>
