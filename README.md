@@ -48,17 +48,17 @@ http://127.0.0.1:5000/
 O arquivo hotel.db é criado automaticamente com:
 
 •Tabela quartos
-   •Id
-   •Número   
-   •Tipo
-   •Preço
-   •Status (livre/ocupado)
+•Id
+•Número   
+•Tipo
+•Preço
+•Status (livre/ocupado)
 
 •Tabela reservas
-   •Id
-   •Nome
-   •Quarto_id
-   •Data
+•Id
+•Nome
+•Quarto_id
+•Data
 
 🔄 Resetar o banco
 
