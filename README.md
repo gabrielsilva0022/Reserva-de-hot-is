@@ -12,27 +12,14 @@ Listar reservas realizadas
 
 Criar o banco automaticamente
 
-👨‍💻 Colaboradores
-
-Gabriel Eustáquio – 42957613
-
-Yan Marcos – 042733588
-
-Pedro Vitor – 42921601
-
-Guilherme Ferreira – 42923921
 
 🛠 Tecnologias Utilizadas
 
-Python 3
-
-Flask
-
-HTML
-
-CSS
-
-SQLite3
+•Python 3
+•Flask
+•HTML
+•CSS
+•SQLite3
 
 📂 Estrutura do Projeto
 /static
@@ -60,27 +47,18 @@ http://127.0.0.1:5000/
 
 O arquivo hotel.db é criado automaticamente com:
 
-Tabela quartos
+•Tabela quartos
+   •Id
+   •Número   
+   •Tipo
+   •Preço
+   •Status (livre/ocupado)
 
-id
-
-numero
-
-tipo
-
-preco
-
-status (livre/ocupado)
-
-Tabela reservas
-
-id
-
-nome
-
-quarto_id
-
-data
+•Tabela reservas
+   •Id
+   •Nome
+   •Quarto_id
+   •Data
 
 🔄 Resetar o banco
 
