@@ -51,7 +51,7 @@ http://127.0.0.1:5000/
 
 O arquivo hotel.db é criado automaticamente com:
 
-•Tabela quartos
+•TABELA DE QUARTOS
 
 •Id
 
@@ -63,7 +63,7 @@ O arquivo hotel.db é criado automaticamente com:
 
 •Status (livre/ocupado)
 
-•Tabela reservas
+•TABELA RESERVAS
 
 •Id
 
